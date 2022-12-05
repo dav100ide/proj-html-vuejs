@@ -1,14 +1,14 @@
 <template>
    <main>
-      <CiaoSection />
+      <IntroSection />
    </main>
 </template>
 
 <script>
-import CiaoSection from './MainSections/CiaoSection.vue';
+import IntroSection from './MainSections/IntroSection.vue';
 export default {
    components: {
-      CiaoSection,
+      IntroSection,
    },
 };
 </script>
