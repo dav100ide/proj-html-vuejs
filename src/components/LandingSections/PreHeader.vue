@@ -1,5 +1,5 @@
 <template>
-   <header>header</header>
+   <div class="container-fluid ms_container">pre-header</div>
 </template>
 
 <script>
