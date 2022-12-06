@@ -1,6 +1,6 @@
 <template>
    <div class="wrapper">
-      <div class="ms_container container-fluid">
+      <div class="ms_container | container-fluid">
          <header class="py-3">
             <img src="../../assets/nexgen-logo.svg" alt="logo" />
             <nav>
@@ -18,15 +18,28 @@
             </nav>
          </header>
       </div>
+      <section class="hero">
+         <h1 class="mb-4">Financial Risk</h1>
+         <p class="mb-4">
+            The right outcomes depend on continuos rigor in governance, models, and <br />
+            processes across the finance function.
+         </p>
+         <div class="buttons">
+            <PrimaryBtn class="me-3" innerHTML="GET IN TOUCH" />
+            <SecondaryBtn innerHTML="READ MORE" />
+         </div>
+      </section>
    </div>
 </template>
 
 <script>
 import PrimaryBtn from '../btns/PrimaryBtn.vue';
+import SecondaryBtn from '../btns/SecondaryBtn.vue';
 
 export default {
    components: {
       PrimaryBtn,
+      SecondaryBtn,
    },
    data() {
       return {
@@ -59,13 +72,26 @@ export default {
 
 <style lang="scss" scoped>
 .wrapper {
-   background-image: url(../../assets/bg-2.jpg);
+   color: var(--neutral-color-200);
+   position: relative;
+   &::before {
+      z-index: -100;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(../../assets/bg-2.jpg);
+      filter: brightness(0.7);
+   }
 }
 
 header {
+   flex-grow: 0;
    @include flex-center;
    justify-content: space-between;
-   color: var(--neutral-color-200);
+
    img {
       max-width: 8rem;
    }
@@ -75,6 +101,20 @@ header {
          @include horizontal-list(2rem);
          font-weight: 500;
       }
+   }
+}
+
+.hero {
+   padding-block-start: 15rem;
+   padding-block-end: 20rem;
+   text-align: center;
+   h1 {
+      font-size: 5rem;
+      font-weight: bold;
+   }
+   p {
+      font-size: 1.1rem;
+      color: var(--neutral-color-300);
    }
 }
 </style>

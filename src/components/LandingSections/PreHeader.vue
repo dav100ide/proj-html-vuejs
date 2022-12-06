@@ -46,7 +46,7 @@ export default {
 <style lang="scss" scoped>
 .wrapper {
    background-color: var(--secondary-color);
-   color: var(--neutral-color-200);
+   color: var(--neutral-color-300);
 }
 
 .ms_container {
