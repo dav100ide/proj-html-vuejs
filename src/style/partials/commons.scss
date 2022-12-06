@@ -4,4 +4,11 @@
 .ms_container {
    max-width: 70rem;
    margin: 0 auto;
+   &__sm {
+      max-width: 60rem;
+   }
 }
+
+/*-------------------
+    BUTTONS
+-------------------*/
