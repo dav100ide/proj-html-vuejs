@@ -14,7 +14,7 @@
    list-style: none;
 }
 
-@mixin horizontal-list($gap) {
+@mixin horizontal-list($gap: 0) {
    @include reset-list;
    @include flex-center($gap);
 }

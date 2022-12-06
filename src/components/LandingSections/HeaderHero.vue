@@ -3,6 +3,7 @@
       <div class="ms_container | container-fluid">
          <header class="py-3">
             <img src="../../assets/nexgen-logo.svg" alt="logo" />
+            <!-- desktop nav -->
             <nav>
                <ul>
                   <li v-for="link in links">
@@ -16,6 +17,9 @@
                </a>
                <PrimaryBtn innerHTML="GET IN TOUCH" />
             </nav>
+            <!-- /desktop nav -->
+            <!-- mobile hamburger -->
+            <!-- /mobile hamburger -->
          </header>
       </div>
       <section class="hero">
@@ -110,7 +114,7 @@ header {
    text-align: center;
    h1 {
       font-size: 5rem;
-      font-weight: bold;
+      font-weight: 900;
    }
    p {
       font-size: 1.1rem;
