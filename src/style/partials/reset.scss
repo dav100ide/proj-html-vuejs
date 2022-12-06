@@ -39,4 +39,19 @@ button {
       --bs-btn-disabled-bg: var(--neutral-color-300);
       --bs-btn-disabled-border-color: var(--neutral-color-300);
    }
+
+   &-secondary {
+      --bs-btn-bg: transparent;
+      --bs-btn-border-color: var(--primary-color-300);
+
+      --bs-btn-hover-bg: var(--primary-color);
+      --bs-btn-hover-border-color: var(--primary-color);
+
+      --bs-btn-active-bg: var(--primary-color-300);
+      --bs-btn-active-border-color: var(--primary-color-300);
+
+      --bs-btn-disabled-color: var(--neutral-color-300);
+      --bs-btn-disabled-bg: var(--neutral-color-300);
+      --bs-btn-disabled-border-color: var(--neutral-color-300);
+   }
 }

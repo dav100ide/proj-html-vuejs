@@ -14,7 +14,6 @@
                <a href="">
                   <i class="fa-regular fa-user"></i>
                </a>
-               <!-- <button class="btn btn-primary">GET IN TOUCH</button> -->
                <PrimaryBtn innerHTML="GET IN TOUCH" />
             </nav>
          </header>
@@ -24,6 +23,7 @@
 
 <script>
 import PrimaryBtn from '../btns/PrimaryBtn.vue';
+
 export default {
    components: {
       PrimaryBtn,
