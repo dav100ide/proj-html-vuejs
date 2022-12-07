@@ -25,3 +25,11 @@
    left: 50%;
    translate: -50% -50%;
 }
+
+@mixin position-absolute-parent-size {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+}
