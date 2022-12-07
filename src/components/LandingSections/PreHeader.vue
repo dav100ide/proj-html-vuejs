@@ -57,6 +57,16 @@ export default {
    }
    .company-info {
       @include flex-center(2rem);
+      @media (width < 768px) {
+         display: block;
+         text-align: center;
+         & > * {
+            margin-inline: 0.5rem;
+         }
+      }
+   }
+   @media (width < 768px) {
+      flex-direction: column;
    }
 }
 </style>

@@ -8,7 +8,7 @@
             in Numbers
          </h2>
          <div class="row">
-            <div v-for="result in results" class="col-3">
+            <div v-for="result in results" class="col-6 col-md-3">
                <div class="h2">
                   {{ result.number }}
                </div>
@@ -16,11 +16,6 @@
                   {{ result.name }}
                </div>
             </div>
-
-            <!-- <div class="col-3">col</div>
-            <div class="col-3">col2</div>
-            <div class="col-3">col3</div>
-            <div class="col-3">col4</div> -->
          </div>
       </div>
    </section>
@@ -66,7 +61,10 @@ section {
    }
    h2 {
       color: var(--neutral-color-100);
-      margin-bottom: 8rem;
+      margin-bottom: 1.5rem;
+      @media (width > 768px) {
+         margin-bottom: 8rem;
+      }
    }
    .h2 {
       color: var(--primary-color-300);
