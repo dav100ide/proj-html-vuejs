@@ -1,6 +1,6 @@
 <template>
    <section class="ms_py">
-      <div class="ms_container">
+      <div class="ms_container container-fluid">
          <h4 class="mb-4">OUR BUSINESS AREA</h4>
          <h2 class="mb-4">
             Excellence in
@@ -16,7 +16,7 @@
                <SecondaryBtn innerHTML="SEE ALL" />
             </div>
          </div>
-         <div class="container-fluid">
+         <div>
             <div class="row gy-4">
                <div v-for="service in services" class="col-12 col-sm-6 col-md-4">
                   <TransparentCard :info="service" />
@@ -80,7 +80,6 @@ section {
    background-color: var(--secondary-color-400);
    color: var(--neutral-color-200);
    p {
-      color: var(--neutral-color-300);
       @media (width > 768px) {
          width: 60%;
       }

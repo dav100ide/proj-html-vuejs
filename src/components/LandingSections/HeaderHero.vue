@@ -127,7 +127,6 @@ header {
    }
    p {
       font-size: 1.1rem;
-      color: var(--neutral-color-300);
    }
 }
 </style>

@@ -53,6 +53,7 @@ export default {
 <style lang="scss" scoped>
 section {
    position: relative;
+
    .overlay {
       z-index: -1;
       @include position-absolute-parent-size;
@@ -61,6 +62,7 @@ section {
       background-position: bottom;
       filter: grayscale(1);
    }
+
    h2 {
       color: var(--neutral-color-100);
       margin-bottom: 1.5rem;
@@ -75,6 +77,13 @@ section {
    .h5 {
       color: var(--neutral-color-100);
       font-weight: bold;
+   }
+   @media (width < 768px) {
+      h2,
+      .h2,
+      .h5 {
+         text-shadow: 2px 2px black;
+      }
    }
 }
 </style>
