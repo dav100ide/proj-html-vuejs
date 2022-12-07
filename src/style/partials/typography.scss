@@ -4,3 +4,28 @@
 body {
    font-family: 'Poppins', sans-serif;
 }
+
+h2 {
+   font-size: 3rem;
+   font-weight: bold;
+   strong {
+      font-weight: inherit;
+      &.primary {
+         color: var(--primary-color);
+         background-color: var(--primary-color-200);
+      }
+      &.secondary {
+         background-color: var(--primary-color-300__transparent);
+      }
+   }
+}
+
+h4 {
+   color: var(--primary-color-300);
+   font-size: 1.25rem;
+   font-weight: bold;
+}
+
+p {
+   color: var(--neutral-color-200);
+}

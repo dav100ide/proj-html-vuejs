@@ -18,3 +18,10 @@
    @include reset-list;
    @include flex-center($gap);
 }
+
+@mixin position-absolute-center {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   translate: -50% -50%;
+}

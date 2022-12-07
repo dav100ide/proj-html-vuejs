@@ -1,5 +1,5 @@
 <template>
-   <div class="wrapper">
+   <div class="pre-header">
       <div class="ms_container | container-fluid py-2">
          <span class="working-time">
             <i class="fa-solid fa-clock"></i>
@@ -44,7 +44,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.wrapper {
+.pre-header {
    background-color: var(--secondary-color);
    color: var(--neutral-color-300);
 }

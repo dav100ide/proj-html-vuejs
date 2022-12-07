@@ -1,5 +1,5 @@
 <template>
-   <div class="wrapper">
+   <div class="header-hero">
       <div class="ms_container | container-fluid">
          <header class="py-3">
             <img src="../../assets/nexgen-logo.svg" alt="logo" />
@@ -75,7 +75,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.wrapper {
+.header-hero {
    color: var(--neutral-color-200);
    position: relative;
    &::before {
