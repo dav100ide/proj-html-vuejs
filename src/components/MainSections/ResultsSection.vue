@@ -7,13 +7,15 @@
             <strong class="secondary | px-2 py-1 rounded-2"> Results </strong>
             in Numbers
          </h2>
-         <div class="row">
-            <div v-for="result in results" class="col-6 col-md-3">
-               <div class="h2">
-                  {{ result.number }}
-               </div>
-               <div class="h5">
-                  {{ result.name }}
+         <div class="container-fluid">
+            <div class="row">
+               <div v-for="result in results" class="col-6 col-md-3">
+                  <div class="h2">
+                     {{ result.number }}
+                  </div>
+                  <div class="h5">
+                     {{ result.name }}
+                  </div>
                </div>
             </div>
          </div>

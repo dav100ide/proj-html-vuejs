@@ -13,5 +13,11 @@
     LAYOUT
 -------------------*/
 .ms_py {
-   padding-block: 7.5rem;
+   padding-block: 2rem;
+   @media (width > 768px) {
+      padding-block: 4rem;
+   }
+   @media (width > 992px) {
+      padding-block: 7.5rem;
+   }
 }

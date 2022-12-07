@@ -6,7 +6,6 @@ body {
 }
 
 h2 {
-   font-size: 3rem;
    font-weight: bold;
    strong {
       font-weight: inherit;
@@ -17,6 +16,9 @@ h2 {
       &.secondary {
          background-color: var(--primary-color-300__transparent);
       }
+   }
+   @media (width > 768px) {
+      font-size: 3rem;
    }
 }
 

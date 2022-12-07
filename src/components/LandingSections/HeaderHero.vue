@@ -4,7 +4,7 @@
          <header class="py-3">
             <img src="../../assets/nexgen-logo.svg" alt="logo" />
             <!-- desktop nav -->
-            <nav>
+            <nav class="d-none d-md-flex">
                <ul>
                   <li v-for="link in links">
                      <a :href="link.href">
@@ -19,6 +19,7 @@
             </nav>
             <!-- /desktop nav -->
             <!-- mobile hamburger -->
+            <nav class="d-block d-md-none">nav mobile</nav>
             <!-- /mobile hamburger -->
          </header>
       </div>
@@ -92,7 +93,6 @@ export default {
 }
 
 header {
-   flex-grow: 0;
    @include flex-center;
    justify-content: space-between;
 
@@ -109,12 +109,21 @@ header {
 }
 
 .hero {
-   padding-block-start: 15rem;
-   padding-block-end: 20rem;
    text-align: center;
+   padding-block: 5rem;
+   @media (width > 768px) {
+      padding-block: 10rem;
+   }
+   @media (width > 992px) {
+      padding-block-start: 15rem;
+      padding-block-end: 20rem;
+   }
    h1 {
-      font-size: 5rem;
       font-weight: 900;
+      font-size: 3rem;
+      @media (width > 992px) {
+         font-size: 5rem;
+      }
    }
    p {
       font-size: 1.1rem;
