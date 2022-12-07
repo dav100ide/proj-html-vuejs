@@ -21,11 +21,11 @@ export default {
    --bs-btn-border-radius: 0.3125rem;
 
    &-primary {
-      --bs-btn-bg: var(--primary-color-300);
-      --bs-btn-border-color: var(--primary-color-300);
+      --bs-btn-bg: var(--primary-color);
+      --bs-btn-border-color: var(--primary-color);
 
-      --bs-btn-hover-bg: var(--primary-color);
-      --bs-btn-hover-border-color: var(--primary-color);
+      --bs-btn-hover-bg: var(--primary-color-300);
+      --bs-btn-hover-border-color: var(--primary-color-300);
 
       --bs-btn-active-bg: var(--accent-color);
       --bs-btn-active-border-color: var(--accent-color);
