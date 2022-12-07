@@ -33,3 +33,10 @@
    right: 0;
    bottom: 0;
 }
+
+@mixin parent-circle($size: 1.5rem) {
+   width: $size;
+   height: $size;
+   border-radius: 50%;
+   @include flex-center;
+}
