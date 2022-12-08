@@ -8,6 +8,13 @@
    gap: $gap;
 }
 
+@mixin flex-start($gap: 0) {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   gap: $gap;
+}
+
 @mixin reset-list {
    margin: 0;
    padding: 0;
