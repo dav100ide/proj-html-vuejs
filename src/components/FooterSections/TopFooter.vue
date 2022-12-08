@@ -22,14 +22,8 @@
                </div>
                <SecondaryBtn innerHTML="GET IN TOUCH" />
             </div>
-            <div class="col-12 col-sm-4 col-md-3">
-               <GlassCard />
-            </div>
-            <div class="col-12 col-sm-4 col-md-3">
-               <GlassCard />
-            </div>
-            <div class="col-12 col-sm-4 col-md-3">
-               <GlassCard />
+            <div v-for="cardInfo in cardsInfo" class="col-12 col-sm-4 col-md-3">
+               <GlassCard :info="cardInfo" />
             </div>
          </div>
       </div>
@@ -45,6 +39,34 @@ export default {
    data() {
       return {
          store,
+         cardsInfo: [
+            {
+               title: 'About',
+               list: ['Pokemon', 'ciao', 'tua mamma', 'come sta?', 'ho 3 anni', 'sku sku'],
+            },
+            {
+               title: 'Services',
+               list: [
+                  'Audit & Assurance',
+                  'Financial Adivosry',
+                  'tua Analyyics and M',
+                  'come sta?',
+                  'Middle Marketing',
+                  'skussaw1u',
+               ],
+            },
+            {
+               title: 'Support',
+               list: [
+                  'Csgo', //
+                  'Final Fantasy',
+                  'M and M',
+                  'ciaooo',
+                  'W la ..',
+                  "sono d'accordo",
+               ],
+            },
+         ],
       };
    },
    components: {
