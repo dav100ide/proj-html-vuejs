@@ -20,10 +20,15 @@ button {
    color: inherit;
 }
 
-input.form-control {
+.form-control {
    color: inherit;
    border: none;
    &:focus {
       box-shadow: none;
    }
+}
+
+select.form-select:focus {
+   box-shadow: none;
+   border-color: none;
 }
