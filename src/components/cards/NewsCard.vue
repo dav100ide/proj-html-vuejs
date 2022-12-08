@@ -38,7 +38,7 @@ export default {
 article {
    position: relative;
 
-   @media (width > 1200px) {
+   @media (width > 1400px) {
       .overlay {
          background-color: rgba(black, 0.45);
          @include position-absolute-parent-size;

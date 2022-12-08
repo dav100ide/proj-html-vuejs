@@ -1,7 +1,7 @@
 <template>
    <section class="ms_py">
       <div class="ms_container container-fluid">
-         <div class="row">
+         <div class="row gy-3">
             <div class="col-12 col-md-3 main-col">
                <img src="../../assets/nexgen-logo.svg" alt="logo" class="img-fluid mb-3" />
                <div class="mb-4">
@@ -22,7 +22,7 @@
                </div>
                <SecondaryBtn innerHTML="GET IN TOUCH" />
             </div>
-            <div v-for="cardInfo in cardsInfo" class="col-12 col-sm-4 col-md-3">
+            <div v-for="cardInfo in cardsInfo" class="col col-sm-4 col-md-3">
                <GlassCard :info="cardInfo" />
             </div>
          </div>
