@@ -5,6 +5,7 @@
       <ServicesSection />
       <TeamSection />
       <NewsSection />
+      <NewsLetter />
    </main>
 </template>
 
@@ -14,6 +15,7 @@ import ResultsSection from './MainSections/ResultsSection.vue';
 import ServicesSection from './MainSections/ServicesSection.vue';
 import TeamSection from './MainSections/TeamSection.vue';
 import NewsSection from './MainSections/NewsSection.vue';
+import NewsLetter from './MainSections/NewsLetter.vue';
 
 export default {
    components: {
@@ -22,6 +24,7 @@ export default {
       ServicesSection,
       TeamSection,
       NewsSection,
+      NewsLetter,
    },
 };
 </script>
