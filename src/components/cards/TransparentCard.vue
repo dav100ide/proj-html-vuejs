@@ -1,5 +1,5 @@
 <template>
-   <article>
+   <article class="h-100">
       <div class="mb-3 d-flex justify-content-between align-items-start">
          <i :class="info.icon"></i>
          <div class="ms_circle">

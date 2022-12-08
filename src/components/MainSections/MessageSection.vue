@@ -1,7 +1,7 @@
 <template>
    <section class="ms_py">
       <div class="ms_container container-fluid">
-         <div class="row gx-5">
+         <div class="row gx-4">
             <!-- col a sinistra -->
             <div class="col-12 col-md-6 col-lg-8 mb-3 mb-md-0">
                <h4 class="mb-4">SEND A MESSAGE</h4>
@@ -12,58 +12,60 @@
                <!-- form message -->
                <form @submit.prevent>
                   <!-- nested row -->
-                  <div class="row g-3 mb-3">
-                     <div class="col-sm-6">
-                        <div class="form-floating">
-                           <input
-                              type="text"
-                              class="form-control"
-                              id="message-name"
-                              placeholder="Name"
-                           />
-                           <label for="message-name">Name</label>
+                  <div class="container-fluid">
+                     <div class="row g-3 mb-3">
+                        <div class="col-sm-6">
+                           <div class="form-floating">
+                              <input
+                                 type="text"
+                                 class="form-control"
+                                 id="message-name"
+                                 placeholder="Name"
+                              />
+                              <label for="message-name">Name</label>
+                           </div>
                         </div>
-                     </div>
-                     <div class="col-sm-6">
-                        <div class="form-floating">
-                           <input
-                              type="text"
-                              class="form-control"
-                              id="message-mail"
-                              placeholder="Email"
-                           />
-                           <label for="message-mail">Email</label>
+                        <div class="col-sm-6">
+                           <div class="form-floating">
+                              <input
+                                 type="text"
+                                 class="form-control"
+                                 id="message-mail"
+                                 placeholder="Email"
+                              />
+                              <label for="message-mail">Email</label>
+                           </div>
                         </div>
-                     </div>
-                     <div class="col-sm-6">
-                        <div class="form-floating">
-                           <input
-                              type="text"
-                              class="form-control"
-                              id="message-phone"
-                              placeholder="Phone"
-                           />
-                           <label for="message-phone">Phone</label>
+                        <div class="col-sm-6">
+                           <div class="form-floating">
+                              <input
+                                 type="text"
+                                 class="form-control"
+                                 id="message-phone"
+                                 placeholder="Phone"
+                              />
+                              <label for="message-phone">Phone</label>
+                           </div>
                         </div>
-                     </div>
-                     <div class="col-sm-6">
-                        <select class="form-select">
-                           <option selected>More Info</option>
-                           <option value="1">One</option>
-                           <option value="2">Two</option>
-                        </select>
-                     </div>
-                     <div class="col-12">
-                        <div class="form-floating">
-                           <textarea
-                              class="form-control"
-                              name="message"
-                              id="message"
-                              cols="30"
-                              rows="50"
-                              placeholder="Message"
-                           ></textarea>
-                           <label for="message">Message</label>
+                        <div class="col-sm-6">
+                           <select class="form-select">
+                              <option selected>More Info</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                           </select>
+                        </div>
+                        <div class="col-12">
+                           <div class="form-floating">
+                              <textarea
+                                 class="form-control"
+                                 name="message"
+                                 id="message"
+                                 cols="30"
+                                 rows="50"
+                                 placeholder="Message"
+                              ></textarea>
+                              <label for="message">Message</label>
+                           </div>
                         </div>
                      </div>
                   </div>
