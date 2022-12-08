@@ -22,9 +22,15 @@
                </div>
                <SecondaryBtn innerHTML="GET IN TOUCH" />
             </div>
-            <div class="col-12 col-sm-4 col-md-3"></div>
-            <div class="col-12 col-sm-4 col-md-3"></div>
-            <div class="col-12 col-sm-4 col-md-3"></div>
+            <div class="col-12 col-sm-4 col-md-3">
+               <GlassCard />
+            </div>
+            <div class="col-12 col-sm-4 col-md-3">
+               <GlassCard />
+            </div>
+            <div class="col-12 col-sm-4 col-md-3">
+               <GlassCard />
+            </div>
          </div>
       </div>
    </section>
@@ -33,6 +39,8 @@
 <script>
 import { store } from '../../store';
 import SecondaryBtn from '../btns/SecondaryBtn.vue';
+import GlassCard from '../cards/GlassCard.vue';
+
 export default {
    data() {
       return {
@@ -41,6 +49,7 @@ export default {
    },
    components: {
       SecondaryBtn,
+      GlassCard,
    },
 };
 </script>
