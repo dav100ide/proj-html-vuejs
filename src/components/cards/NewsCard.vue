@@ -37,61 +37,63 @@ export default {
 <style lang="scss" scoped>
 article {
    position: relative;
-   .overlay {
-      background-color: rgba(black, 0.45);
-      @include position-absolute-parent-size;
-   }
 
-   .card-text {
-      & > * {
-         position: absolute;
-         margin: 0;
-         padding: 0;
-         color: var(--neutral-color-200);
-         text-align: center;
+   @media (width > 1200px) {
+      .overlay {
+         background-color: rgba(black, 0.45);
+         @include position-absolute-parent-size;
       }
+      .card-text {
+         & > * {
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            color: var(--neutral-color-200);
+            text-align: center;
+         }
 
-      h4 {
-         transition: bottom 0.3s linear;
-         color: var(--neutral-color-100);
-         bottom: 15%;
-         left: 50%;
-         translate: -50%;
+         h4 {
+            transition: bottom 0.3s linear;
+            color: var(--neutral-color-100);
+            bottom: 15%;
+            left: 50%;
+            translate: -50%;
+         }
+         p {
+            padding-inline: 0.5rem;
+            transition: opacity 0.5s linear;
+            bottom: 15%;
+            left: 0;
+            opacity: 0;
+         }
+         div:has(i) {
+            transition: all 0.5s linear;
+            top: 100%;
+            @include flex-center(0.5rem);
+         }
+         div:has(i):first-child {
+            right: 100%;
+         }
+         div:has(i):nth-child(2) {
+            left: 100%;
+         }
       }
-      p {
-         padding-inline: 0.5rem;
-         transition: opacity 0.5s linear;
-         bottom: 15%;
-         left: 0;
-         opacity: 0;
-      }
-      div:has(i) {
-         transition: all 0.5s linear;
-         top: 100%;
-         @include flex-center(0.5rem);
-      }
-      div:has(i):first-child {
-         right: 100%;
-      }
-      div:has(i):nth-child(2) {
-         left: 100%;
-      }
-   }
-   &:hover {
-      h4 {
-         bottom: 40%;
-      }
-      p {
-         opacity: 1;
-      }
-      div:has(i) {
-         top: 8%;
-      }
-      div:has(i):first-child {
-         right: 50%;
-      }
-      div:has(i):nth-child(2) {
-         left: 50%;
+      &:hover {
+         h4 {
+            bottom: 40%;
+         }
+         p {
+            opacity: 1;
+         }
+         div:has(i) {
+            top: 8%;
+         }
+         div:has(i):first-child {
+            right: 50%;
+         }
+         div:has(i):nth-child(2) {
+            left: 50%;
+         }
       }
    }
 }
