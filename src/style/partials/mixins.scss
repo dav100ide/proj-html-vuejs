@@ -1,5 +1,5 @@
 /*-------------------
-    mixins
+    flex
 -------------------*/
 @mixin flex-center($gap: 0) {
    display: flex;
@@ -14,7 +14,9 @@
    align-items: center;
    gap: $gap;
 }
-
+/*-------------------
+    list
+-------------------*/
 @mixin reset-list {
    margin: 0;
    padding: 0;
@@ -25,7 +27,9 @@
    @include reset-list;
    @include flex-center($gap);
 }
-
+/*-----------------------
+    position absolute
+-----------------------*/
 @mixin position-absolute-center {
    position: absolute;
    top: 50%;
@@ -40,7 +44,9 @@
    right: 0;
    bottom: 0;
 }
-
+/*-----------------------
+    other utilities
+-----------------------*/
 @mixin parent-circle($size: 1.5rem) {
    width: $size;
    height: $size;
