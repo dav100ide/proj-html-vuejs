@@ -6,6 +6,7 @@
       <TeamSection />
       <NewsSection />
       <NewsLetter />
+      <MessageSection />
    </main>
 </template>
 
@@ -16,6 +17,7 @@ import ServicesSection from './MainSections/ServicesSection.vue';
 import TeamSection from './MainSections/TeamSection.vue';
 import NewsSection from './MainSections/NewsSection.vue';
 import NewsLetter from './MainSections/NewsLetter.vue';
+import MessageSection from './MainSections/MessageSection.vue';
 
 export default {
    components: {
@@ -25,6 +27,7 @@ export default {
       TeamSection,
       NewsSection,
       NewsLetter,
+      MessageSection,
    },
 };
 </script>

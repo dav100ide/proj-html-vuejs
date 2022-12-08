@@ -14,8 +14,16 @@ img {
 }
 
 /*-------------------------------
-    bs buttons  reset
+    bs  reset
 ------------------------------------*/
 button {
    color: inherit;
+}
+
+input.form-control {
+   color: inherit;
+   border: none;
+   &:focus {
+      box-shadow: none;
+   }
 }

@@ -51,11 +51,7 @@ section {
          input.form-control {
             padding-inline: 1.5rem;
             color: var(--neutral-color-100);
-            background: rgba(white, 0.15);
-            border: none;
-            &:focus {
-               box-shadow: none;
-            }
+            background-color: rgba(white, 0.15);
          }
          label {
             color: var(--neutral-color-300);
