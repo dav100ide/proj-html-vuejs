@@ -39,7 +39,7 @@
          </div>
       </section>
       <!-- offcanvas: hamburger menu -->
-      <nav id="hamburger-menu" class="bg-dark fs-4" :class="{ active: menuOpen }">
+      <nav id="hamburger-menu" class="fs-4" :class="{ active: menuOpen }">
          <ul>
             <li v-for="link in links">
                <a :href="link.href">
@@ -154,6 +154,7 @@ header {
 }
 
 #hamburger-menu {
+   z-index: 50;
    box-shadow: rgba(0, 0, 0, 0.8) 5px 5px 15px;
    width: 60%;
    background-color: var(--secondary-color-400);
