@@ -13,7 +13,7 @@
             </div>
          </div>
          <div class="row">
-            <div v-for="article in articles" class="col-6 col-md-4">
+            <div v-for="article in articles" class="col-sm-6 col-md-4">
                <NewSCard :info="article" />
             </div>
          </div>
@@ -63,5 +63,8 @@ export default {
 <style lang="scss" scoped>
 section {
    background-color: #eef4ed;
+   .row > *:nth-child(odd) {
+      flex-grow: 1;
+   }
 }
 </style>
