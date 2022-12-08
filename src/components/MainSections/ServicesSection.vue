@@ -12,7 +12,7 @@
                Dolores pariatur repellendus molestias officia dolore suscipit nobis culpa tempore
                quod explicabo.
             </p>
-            <div class="text-center">
+            <div class="text-center mb-3 mb-md-0">
                <SecondaryBtn innerHTML="SEE ALL" />
             </div>
          </div>
