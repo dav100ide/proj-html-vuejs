@@ -1,7 +1,7 @@
 <template>
    <section class="ms_py">
+      <h4 class="mb-4">WE LIKE WHAT WE DO</h4>
       <div class="ms_container container-fluid">
-         <h4 class="mb-4">WE LIKE WHAT WE DO</h4>
          <div class="row">
             <div class="col-12 col-sm-6 col-md-8">
                <h2 class="mb-4">
