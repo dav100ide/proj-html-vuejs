@@ -162,7 +162,9 @@ header {
    left: -70%;
    transition: left 0.35s linear;
    &.active {
-      left: 0;
+      @media (width < 768px) {
+         left: 0;
+      }
    }
    ul {
       @include reset-list;
