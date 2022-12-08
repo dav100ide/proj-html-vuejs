@@ -19,7 +19,11 @@
             </nav>
             <!-- /desktop nav -->
             <!-- mobile hamburger -->
-            <nav class="d-block d-md-none">nav mobile</nav>
+            <div class="d-block d-md-none">
+               <button class="btn btn-primary" id="hamburger" @click="menuOpen = !menuOpen">
+                  <i class="fa-solid" :class="{ 'fa-bars': !menuOpen, 'fa-x': menuOpen }"></i>
+               </button>
+            </div>
             <!-- /mobile hamburger -->
          </header>
       </div>
@@ -34,6 +38,17 @@
             <SecondaryBtn innerHTML="READ MORE" />
          </div>
       </section>
+      <!-- offcanvas: hamburger menu -->
+      <nav id="hamburger-menu" class="bg-dark fs-4" :class="{ active: menuOpen }">
+         <ul>
+            <li v-for="link in links">
+               <a :href="link.href">
+                  {{ link.linkName }}
+               </a>
+            </li>
+         </ul>
+      </nav>
+      <!-- /offcanvas: hamburger menu -->
    </div>
 </template>
 
@@ -70,6 +85,7 @@ export default {
                href: '#',
             },
          ],
+         menuOpen: false,
       };
    },
 };
@@ -127,6 +143,36 @@ header {
    }
    p {
       font-size: 1.1rem;
+   }
+}
+// mobile hamburger nav menu
+#hamburger {
+   width: 3.5rem;
+   background-color: var(--primary-color);
+   border: none;
+   transition: left 1s cubic-bezier(0.15, -0.3, 0.66, 0.08);
+}
+
+#hamburger-menu {
+   box-shadow: rgba(0, 0, 0, 0.8) 5px 5px 15px;
+   width: 60%;
+   background-color: var(--secondary-color-400);
+   position: fixed;
+   top: 0;
+   left: -70%;
+   transition: left 0.35s linear;
+   &.active {
+      left: 0;
+   }
+   ul {
+      @include reset-list;
+      li {
+         text-align: center;
+         padding: 0.5rem;
+         &:hover {
+            background-color: var(--primary-color-300);
+         }
+      }
    }
 }
 </style>
