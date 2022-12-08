@@ -2,7 +2,7 @@
    <section class="ms_py">
       <div class="ms_container container-fluid">
          <div class="row">
-            <div class="col-12 col-sm-6 col-md-8">
+            <div class="col-12 col-md-6 col-lg-8">
                <h4 class="mb-4">SEND A MESSAGE</h4>
                <h2 class="mb-4">
                   Get in <strong class="primary | px-2 py-1 rounded-2"> Touch </strong>
@@ -11,7 +11,7 @@
                <!-- form message -->
                <form @submit.prevent>
                   <div class="row g-3 mb-3">
-                     <div class="col-6">
+                     <div class="col-sm-6">
                         <div class="form-floating">
                            <input
                               type="text"
@@ -22,7 +22,7 @@
                            <label for="message-name">Name</label>
                         </div>
                      </div>
-                     <div class="col-6">
+                     <div class="col-sm-6">
                         <div class="form-floating">
                            <input
                               type="text"
@@ -33,7 +33,7 @@
                            <label for="message-mail">Email</label>
                         </div>
                      </div>
-                     <div class="col-6">
+                     <div class="col-sm-6">
                         <div class="form-floating">
                            <input
                               type="text"
@@ -44,7 +44,7 @@
                            <label for="message-phone">Phone</label>
                         </div>
                      </div>
-                     <div class="col-6">
+                     <div class="col-sm-6">
                         <select class="form-select">
                            <option selected>More Info</option>
                            <option value="1">One</option>
