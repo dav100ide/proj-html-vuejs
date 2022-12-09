@@ -1,5 +1,5 @@
 <template>
-   <article class="h-100" data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="500">
+   <article class="h-100" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="500">
       <div class="mb-3 d-flex justify-content-between align-items-start">
          <i :class="info.icon"></i>
          <div class="ms_circle">
