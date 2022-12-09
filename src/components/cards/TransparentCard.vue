@@ -1,5 +1,5 @@
 <template>
-   <article class="h-100">
+   <article class="h-100" data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="500">
       <div class="mb-3 d-flex justify-content-between align-items-start">
          <i :class="info.icon"></i>
          <div class="ms_circle">
@@ -12,7 +12,14 @@
 </template>
 
 <script>
+//libreria: animation on scroll
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 export default {
+   render: (h) => h(App),
+   mounted() {
+      AOS.init();
+   },
    props: {
       info: {
          type: Object,
