@@ -29,7 +29,7 @@
 
 <script>
 import SecondaryBtn from '../btns/SecondaryBtn.vue';
-import TransparentCard from '../cards/transparentCard.vue';
+import TransparentCard from '../cards/TransparentCard.vue';
 
 export default {
    components: {
