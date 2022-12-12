@@ -16,7 +16,6 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 export default {
-   render: (h) => h(App),
    mounted() {
       AOS.init();
    },
