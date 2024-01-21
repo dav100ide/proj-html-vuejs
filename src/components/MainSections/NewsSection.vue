@@ -22,8 +22,8 @@
 </template>
 
 <script>
-import PrimaryBtn from '../btns/PrimaryBtn.vue';
-import NewSCard from '../cards/NewsCard.vue';
+import PrimaryBtn from "../btns/PrimaryBtn.vue";
+import NewSCard from "../cards/NewsCard.vue";
 
 export default {
    components: {
@@ -34,25 +34,25 @@ export default {
       return {
          articles: [
             {
-               name: 'Andrea Miller',
-               date: '3 Days Ago',
-               title: 'Incresing creativity blah blah',
-               description: 'lorem ispshaadoi daiowh wuwdhb ofwhccn',
-               img: 'src/assets/news-1.jpg',
+               name: "Andrea Miller",
+               date: "3 Days Ago",
+               title: "Incresing creativity blah blah",
+               description: "lorem ispshaadoi daiowh wuwdhb ofwhccn",
+               img: "src/assets/news-1.jpg",
             },
             {
-               name: 'Nigga Kebab',
-               date: '4 Days Ago',
-               title: 'Ho gli occhiali da sole swag',
-               description: 'How get such cool sunglasses wuwdhb ofwhccn',
-               img: 'src/assets/news-2.jpg',
+               name: "Nigga Kebab",
+               date: "4 Days Ago",
+               title: "Ciao da New York",
+               description: "How get such cool sunglasses wuwdhb ofwhccn",
+               img: "src/assets/news-2.jpg",
             },
             {
-               name: 'Sofia Leftist',
-               date: '2 Days Ago',
-               title: 'Faccio finta di lavorare tutti i giorni blah',
-               description: 'Work from home disaster wuwdhb ofwhccn',
-               img: 'src/assets/news-3.jpg',
+               name: "Sofia Leftist",
+               date: "2 Days Ago",
+               title: "Faccio finta di lavorare tutti i giorni blah",
+               description: "Work from home disaster wuwdhb ofwhccn",
+               img: "src/assets/news-3.jpg",
             },
          ],
       };
