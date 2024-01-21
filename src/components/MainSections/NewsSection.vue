@@ -50,7 +50,7 @@ export default {
             {
                name: "Sofia Leftist",
                date: "2 Days Ago",
-               title: "Faccio finta di lavorare tutti i giorni blah",
+               title: "lavorare tutti i giorni...",
                description: "Work from home disaster wuwdhb ofwhccn",
                img: "src/assets/news-3.jpg",
             },
